@@ -1,0 +1,209 @@
+@import url("style_v2.css");
+
+.intro {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr);
+  align-items: start;
+}
+
+.intro-photo {
+  width: 210px;
+  height: auto;
+  min-height: 0;
+  margin-top: 0;
+  object-fit: contain;
+  object-position: center;
+}
+
+.icon-links {
+  align-items: center;
+  gap: 14px;
+}
+
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  color: var(--muted);
+}
+
+.icon-link:hover {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.icon-link:focus-visible {
+  border-radius: 2px;
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+
+.icon-link svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.cv-icon svg text {
+  fill: currentColor;
+  stroke: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 7px;
+  font-weight: 700;
+}
+
+.linkedin-icon svg {
+  fill: currentColor;
+  stroke: none;
+}
+
+.ssrn-icon img {
+  display: block;
+  width: 31px;
+  height: auto;
+  filter: grayscale(1) opacity(0.68);
+  mix-blend-mode: multiply;
+  transition: filter 0.15s ease;
+}
+
+.ssrn-icon:hover img {
+  filter: none;
+}
+
+.paper-links {
+  margin: 5px 0 7px;
+}
+
+.paper-links .ver:first-child {
+  margin-left: 0;
+}
+
+.venue-group {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  align-items: flex-start;
+  column-gap: 8px;
+  margin-top: 10px;
+  color: #7b8491;
+  font-size: 0.8rem;
+}
+
+.venue-label {
+  line-height: 22px;
+  color: var(--text);
+  font-size: inherit;
+}
+
+.venue-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 6px;
+}
+
+.venue-pill {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: 22px;
+  padding: 0 9px;
+  border: 1px solid #d9dde3;
+  border-radius: 999px;
+  background: transparent;
+  color: #7b8491;
+  font-size: inherit;
+  line-height: 1.35;
+}
+
+.seminar-pill {
+  min-height: 22px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+.seminar-pill:not(:last-child)::after {
+  content: ",";
+}
+
+.venue-pill[data-full]::after {
+  position: absolute;
+  z-index: 10;
+  bottom: calc(100% + 7px);
+  left: 50%;
+  width: max-content;
+  max-width: min(300px, 80vw);
+  padding: 6px 8px;
+  border-radius: 4px;
+  background: #6b7280;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+  color: #fff;
+  content: attr(data-full);
+  font-size: 0.75rem;
+  line-height: 1.35;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 3px);
+  transition: opacity 0.12s ease, transform 0.12s ease;
+  visibility: hidden;
+  white-space: normal;
+}
+
+.venue-pill[data-full]:hover::after,
+.venue-pill[data-full]:focus-visible::after {
+  opacity: 1;
+  transform: translate(-50%, 0);
+  visibility: visible;
+}
+
+.venue-pill[data-full]:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.paper .meta {
+  position: relative;
+  min-height: 22px;
+  margin-top: 10px;
+  padding-left: 104px;
+  color: #7b8491;
+  font-size: 0.8rem;
+  line-height: 22px;
+}
+
+.paper .meta strong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--text);
+  font-size: inherit;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.paper .meta a {
+  color: #7b8491;
+  font-weight: 400;
+}
+
+.paper .meta a:hover {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+@media (max-width: 620px) {
+  .intro {
+    display: flex;
+  }
+
+  .intro-photo {
+    width: 150px;
+    height: auto;
+    min-height: 0;
+  }
+
+}

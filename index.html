@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style_v5.css?v=20260912-9" />
+  <link rel="stylesheet" href="style_v6.css?v=20260914-4" />
 </head>
 <body>
 
@@ -100,19 +100,28 @@
         </details>
         <details class="figure-summary">
           <summary>One-figure summary</summary>
-          <div class="figure-summary-content figure-pair">
-            <a class="figure-link" href="assets/paper_figures/settlement1.pdf" target="_blank" rel="noopener"
-               aria-label="Open the first Settlement figure at full size" title="Open full-size figure">
-              <img src="assets/paper_figures/settlement1.webp" width="1901" height="1518"
-                   alt="Network of authorized participants and ETFs, highlighting affected intermediaries and VEA"
-                   loading="lazy" decoding="async" />
-            </a>
-            <a class="figure-link" href="assets/paper_figures/settlement2.pdf" target="_blank" rel="noopener"
-               aria-label="Open the second Settlement figure at full size" title="Open full-size figure">
-              <img src="assets/paper_figures/settlement2.webp" width="1870" height="1518"
-                   alt="Network propagation from affected authorized participants to locally focused ETFs"
-                   loading="lazy" decoding="async" />
-            </a>
+          <div class="figure-summary-content">
+            <p class="figure-takeaway">This figure shows how arbitrage frictions spill over from global ETFs through shared authorized participants to otherwise unexposed domestic ETFs.</p>
+            <div class="figure-pair settlement-figure-pair">
+              <div class="figure-panel">
+                <a class="figure-link" href="assets/paper_figures/settlement1.pdf" target="_blank" rel="noopener"
+                   aria-label="Open Panel A of the Settlement figure at full size" title="Open full-size figure">
+                  <img src="assets/paper_figures/settlement1.webp" width="1901" height="1518"
+                       alt="Network of authorized participants and ETFs, highlighting affected intermediaries and VEA"
+                       loading="lazy" decoding="async" />
+                </a>
+                <p class="figure-panel-caption"><strong>Panel A:</strong> Arbitrage becomes costly for a focal global-equity ETF (VEA).</p>
+              </div>
+              <div class="figure-panel">
+                <a class="figure-link" href="assets/paper_figures/settlement2.pdf" target="_blank" rel="noopener"
+                   aria-label="Open Panel B of the Settlement figure at full size" title="Open full-size figure">
+                  <img src="assets/paper_figures/settlement2.webp" width="1870" height="1518"
+                       alt="Network propagation from affected authorized participants to locally focused ETFs"
+                       loading="lazy" decoding="async" />
+                </a>
+                <p class="figure-panel-caption"><strong>Panel B:</strong> Arbitrage frictions propagate through the AP network.</p>
+              </div>
+            </div>
           </div>
         </details>
         </div>
@@ -175,12 +184,27 @@
         <details class="figure-summary">
           <summary>One-figure summary</summary>
           <div class="figure-summary-content">
-            <a class="figure-link" href="assets/paper_figures/aetf-short.pdf" target="_blank" rel="noopener"
-               aria-label="Open the ETFs as a Disciplinary Device figure at full size" title="Open full-size figure">
-              <img src="assets/paper_figures/aetf-short.webp" width="2880" height="1728"
-                   alt="Cumulative manager performance by active ETF and mutual-fund management structure"
-                   loading="lazy" decoding="async" />
-            </a>
+            <p class="figure-takeaway">This figure shows that short positions in a fund rise when an underperforming manager joins and fall when an outperforming or new manager joins.</p>
+            <div class="figure-pair">
+              <div class="figure-panel">
+                <a class="figure-link" href="assets/paper_figures/aetf-short1.pdf" target="_blank" rel="noopener"
+                   aria-label="Open Panel A of the ETFs as a Disciplinary Device figure at full size" title="Open full-size figure">
+                  <img src="assets/paper_figures/aetf-short1.webp" width="1800" height="960"
+                       alt="Short positions of funds joined by underperforming managers"
+                       loading="lazy" decoding="async" />
+                </a>
+                <p class="figure-panel-caption"><strong>Panel A:</strong> Short positions of funds joined by bad managers.</p>
+              </div>
+              <div class="figure-panel">
+                <a class="figure-link" href="assets/paper_figures/aetf-short2.pdf" target="_blank" rel="noopener"
+                   aria-label="Open Panel B of the ETFs as a Disciplinary Device figure at full size" title="Open full-size figure">
+                  <img src="assets/paper_figures/aetf-short2.webp" width="1800" height="960"
+                       alt="Short positions of funds joined by outperforming or new managers"
+                       loading="lazy" decoding="async" />
+                </a>
+                <p class="figure-panel-caption"><strong>Panel B:</strong> Short positions of funds joined by good or new managers.</p>
+              </div>
+            </div>
           </div>
         </details>
         </div>
@@ -243,10 +267,11 @@
         <details class="figure-summary">
           <summary>One-figure summary</summary>
           <div class="figure-summary-content">
-            <a class="figure-link" href="assets/paper_figures/cash-basket.pdf" target="_blank" rel="noopener"
+            <p class="figure-takeaway">This figure shows that active ETFs include a surprisingly high proportion of cash in their creation baskets.</p>
+            <a class="figure-link figure-link-single" href="assets/paper_figures/cash-basket1.pdf" target="_blank" rel="noopener"
                aria-label="Open the Baskets Full of Cash figure at full size" title="Open full-size figure">
-              <img src="assets/paper_figures/cash-basket.webp" width="2016" height="1152"
-                   alt="Primary-market activity and portfolio changes for high-yield and investment-grade active bond ETFs"
+              <img src="assets/paper_figures/cash-basket1.webp" width="2000" height="2000"
+                   alt="Distributions of cash proportions in creation baskets for active and passive bond ETFs"
                    loading="lazy" decoding="async" />
             </a>
           </div>
@@ -293,6 +318,7 @@
         <details class="figure-summary">
           <summary>One-figure summary</summary>
           <div class="figure-summary-content">
+            <p class="figure-takeaway">This figure shows that mutual funds change portfolio weights much more around CEO turnovers than around M&amp;A and dividend events, with changes comparable in magnitude to those around earnings announcements.</p>
             <a class="figure-link" href="assets/paper_figures/betting-on-ceo.pdf" target="_blank" rel="noopener"
                aria-label="Open the Betting on the CEO figure at full size" title="Open full-size figure">
               <img src="assets/paper_figures/betting-on-ceo.webp" width="2880" height="2016"
